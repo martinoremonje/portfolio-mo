@@ -1,6 +1,6 @@
 import programadorImg from '../assets/programador.png';
 import superheroImg from '../assets/Screenshot_1.png';
-import image from '../assets/8354.jpg';
+import river from '../assets/river.jpg';
 
 const Portfolio = () => {
   return (
@@ -11,7 +11,7 @@ const Portfolio = () => {
         className="min-h-screen bg-gray-300 flex items-center justify-between px-35"
         data-aos="fade-up"
         style={{
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url(${river})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

@@ -1,6 +1,6 @@
 import React from "react";
 import programadorImg from '../assets/programador.png';
-import image from '../assets/rm209-ning-19-l.jpg';
+import image from '../assets/w3.jpg';
 
 const Navbar = () => {
   return (
