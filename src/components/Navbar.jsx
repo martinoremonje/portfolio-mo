@@ -1,6 +1,6 @@
 import React from "react";
 import programadorImg from '../assets/programador.png';
-import image from '../assets/w3.jpg';
+import image from '../assets/pexels-njeromin-19872371.jpg';
 
 const Navbar = () => {
   return (
