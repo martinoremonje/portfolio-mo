@@ -1,6 +1,6 @@
 import programadorImg from '../assets/programador.png';
 import superheroImg from '../assets/Screenshot_1.png';
-import river from '../assets/river.jpg';
+import image from '../assets/8354.jpg';
 
 const Portfolio = () => {
   return (
@@ -11,7 +11,7 @@ const Portfolio = () => {
         className="min-h-screen bg-gray-300 flex items-center justify-between px-35"
         data-aos="fade-up"
         style={{
-          backgroundImage: `url(${river})`,
+          backgroundImage: `url(${image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -24,7 +24,7 @@ const Portfolio = () => {
         />
         <h1
           data-aos-delay="500"
-          className="text-white text-4xl font-bold"
+          className="text-white text-4xl font-bold underline"
         >
           Desarrollador Fullstack | Web Designer
         </h1>
