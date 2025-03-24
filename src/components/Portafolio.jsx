@@ -8,7 +8,8 @@ const Portfolio = () => {
       {/* Sección Home */}
       <section
         id="home"
-        className="min-h-screen bg-gray-300 flex flex-col md:flex-row items-center justify-between px-8"
+        className="min-h-screen bg-gray-300 flex items-center justify-between px-35"
+        data-aos="fade-up"
         style={{
           backgroundImage: `url(${river})`,
           backgroundSize: 'cover',
@@ -19,11 +20,11 @@ const Portfolio = () => {
         <img
           src={programadorImg}
           alt="Martin IMG"
-          className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full mb-4 md:mb-0"
+          className="w-48 h-48 object-cover rounded-full"
         />
         <h1
           data-aos-delay="500"
-          className="text-white text-2xl md:text-4xl font-bold text-center"
+          className="text-white text-4xl font-bold"
         >
           Desarrollador Fullstack | Web Designer
         </h1>
@@ -32,11 +33,11 @@ const Portfolio = () => {
       {/* Sección About */}
       <section
         id="about"
-        className="mx-2 min-h-screen bg-gray-100 flex flex-col md:flex-row items-center justify-between px-8"
+        className="mx-2 min-h-screen bg-gray-100 flex items-center justify-between px-8"
+        data-aos="fade-right"
       >
         <p
-          data-aos="fade-right"
-          className="text-lg md:text-xl max-w-lg text-center md:text-left mb-4 md:mb-0"
+          className="text-xl max-w-lg"
         >
           ¡Hola! Me llamo Martin Orellana y soy un desarrollador web fullstack.
           Me especializo en el lenguaje de Javascript y utilizo Node, Express,
@@ -46,7 +47,7 @@ const Portfolio = () => {
         <img
           src={superheroImg}
           alt="Superhero IMG"
-          className="rounded-2xl w-48 h-auto md:w-60"
+          className="rounded-2xl w-150 h-auto"
         />
       </section>
 
@@ -56,10 +57,8 @@ const Portfolio = () => {
         className="mx-2 min-h-screen bg-gray-50 flex flex-col items-start justify-center px-8"
       >
         <div data-aos="fade-left">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-left">
-            Certificados
-          </h2>
-          <ul className="list-disc ml-5 space-y-2">
+          <h2 className="text-3xl font-semibold mb-4">Certificados</h2>
+          <ul className="list-disc ml-5">
             <li>Bootcamp en Talento Digital</li>
             <li>Certificación React</li>
           </ul>
@@ -69,13 +68,12 @@ const Portfolio = () => {
       {/* Sección Contacto */}
       <section
         id="contacto"
-        className="min-h-screen bg-gray-20 flex flex-col md:flex-row items-center justify-between px-8"
+        className="min-h-screen bg-gray-20 flex items-center justify-between px-8"
+        data-aos="fade-right"
       >
         <div>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-left">
-            Contacto
-          </h2>
-          <ul className="list-disc ml-5 space-y-2 text-center md:text-left">
+          <h2 className="text-3xl font-semibold mb-4">Contacto</h2>
+          <ul className="list-disc ml-5 space-y-2">
             <li>Email: m.monjeorellana@gmail.com</li>
             <li>Celular: +56 44011200</li>
             <li>
@@ -94,7 +92,7 @@ const Portfolio = () => {
           </ul>
         </div>
         <div
-          className="tenor-gif-embed md:mt-0 mt-4"
+          className="tenor-gif-embed"
           data-postid="25845145"
           data-share-method="host"
           data-aspect-ratio="1"
