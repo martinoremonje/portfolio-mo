@@ -4,7 +4,7 @@ import image from '../assets/pexels-njeromin-19872371.jpg';
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-600 text-white py-4 shadow-md" style={{
+    <nav id="home" className="bg-gray-600 text-white py-4 shadow-md" style={{
               backgroundImage: `url(${image})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
@@ -23,7 +23,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#certificados"
+              href="#certificates"
               className="hover:text-blue-300 transition duration-200"
             >
               Certificados
@@ -31,7 +31,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#about-me"
+              href="#about"
               className="hover:text-blue-300 transition duration-200"
             >
               About Me

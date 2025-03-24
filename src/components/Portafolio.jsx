@@ -1,13 +1,13 @@
 import programadorImg from '../assets/programador.png';
 import superheroImg from '../assets/Screenshot_1.png';
 import river from '../assets/river.jpg';
+import insignia from '../assets/insignia.png';
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen">
-      {/* Sección Home */}
       <section
-        id="home"
+        id="homes"
         className="min-h-screen bg-gray-300 flex items-center justify-between px-35"
         data-aos="fade-up"
         style={{
@@ -33,7 +33,7 @@ const Portfolio = () => {
       {/* Sección About */}
       <section
         id="about"
-        className="mx-2 min-h-screen bg-gray-100 flex items-center justify-between px-8"
+        className="mt-1 mx-2 min-h-screen bg-gray-100 flex items-center justify-between px-8"
         data-aos="fade-right"
       >
         <p
@@ -54,20 +54,29 @@ const Portfolio = () => {
       {/* Sección Certificates */}
       <section
         id="certificates"
-        className="mx-2 min-h-screen bg-gray-50 flex flex-col items-start justify-center px-8"
+        className="mx-2 min-h-screen bg-gray-50 flex items-center justify-around px-8"
+        data-aos="fade-left"
       >
-        <div data-aos="fade-left">
+      
+        <img
+          src={insignia}
+          alt="Insignia IMG"
+          className="rounded-2xl w-130 h-auto"
+        />
+        <div className=''>
+
           <h2 className="text-3xl font-semibold mb-4">Certificados</h2>
           <ul className="list-disc ml-5">
             <li>Bootcamp en Talento Digital</li>
             <li>Certificación React</li>
           </ul>
         </div>
+        
       </section>
 
       {/* Sección Contacto */}
       <section
-        id="contacto"
+        id="contact"
         className="min-h-screen bg-gray-20 flex items-center justify-between px-8"
         data-aos="fade-right"
       >
