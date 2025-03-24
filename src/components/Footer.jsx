@@ -1,11 +1,11 @@
 import React from "react";
 import programadorImg from '../assets/programador.png';
 
-const Navbar = () => {
+const Footer = () => {
   return (
-    <nav className="bg-gray-600 text-white py-4 shadow-md">
+    <nav className="bg-black text-white py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold"><img className="rounded-full h-12 w-12" src={programadorImg} alt="icon" /></div>
+        <div className="text-lg font-bold"><img className="h-12 w-12" src={programadorImg} alt="icon" /></div>
         <ul className="flex space-x-6">
           <li>
             <a
@@ -45,4 +45,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Footer;
