@@ -2,6 +2,7 @@ import programadorImg from '../assets/programador.png';
 import superheroImg from '../assets/Screenshot_1.png';
 import river from '../assets/river.jpg';
 import insignia from '../assets/insignia.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Portfolio = () => {
   return (
@@ -66,7 +67,7 @@ const Portfolio = () => {
         <div className=''>
 
           <h2 className="text-3xl font-semibold mb-4">Certificados</h2>
-          <ul className="list-disc ml-5">
+          <ul className="list-disc ml-5 space-x-3">
             <li><a href="https://www.acreditta.com/credential/cd07f906-5bd4-4424-a954-87ff634ff493?utm_source=linkedin_profile&resource_type=badge&resource=cd07f906-5bd4-4424-a954-87ff634ff493">BOOTCAMP DESARROLLO DE APLICACIONES FULL STACK JAVASCRIPT TRAINEE</a></li>
             <li><a href="https://www.udemy.com/certificate/UC-d4877a13-f82b-447e-93ff-efed00299161/">Curso React y Next.js: Aprende Frontend y Backend FullStack</a></li>
             <li><a href="https://desafiosdev.s3.amazonaws.com/uploads/certification/image/565/aprobacion-final-td8-g68-m10-desarrollo-de-aplicaciones-full-stack-javascript-trainee-v2-0-desarrollo-de-empleabilidad-en-la-industria-digital-ele030792068087-375(2).png">Desarrollo de aplicaciones Full Stack Javascript Trainee</a></li>
@@ -87,7 +88,7 @@ const Portfolio = () => {
       >
         <div>
           <h2 className="text-3xl font-semibold mb-4">Contacto</h2>
-          <ul className="list-disc ml-5 space-y-2">
+          <ul className="list-none ml-5 space-y-2">
             <li>Email: m.monjeorellana@gmail.com</li>
             <li>Celular: +56 44011200</li>
             <li>
@@ -97,11 +98,11 @@ const Portfolio = () => {
                 href="https://www.linkedin.com/in/martin-orellana-monje/"
                 style={{ whiteSpace: 'nowrap' }}
               >
-                Linkedin: www.linkedin.com/in/martin-orellana-monje
+                <FaLinkedin style={{ color: '#0077B5', fontSize: '2rem' }} /> 
               </a>
             </li>
             <li>
-              <a href="">Github: https://github.com/martinoremonje?tab=repositories</a>
+              <a href="https://github.com/martinoremonje?tab=repositories"> <FaGithub style={{ color: 'black', fontSize: '2rem' }} /></a>
             </li>
           </ul>
         </div>
