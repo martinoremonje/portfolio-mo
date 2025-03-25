@@ -116,7 +116,7 @@ const Portfolio = () => {
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contacto</h2>
           <ul className="list-none ml-5 space-y-2">
             <li>Email: m.monjeorellana@gmail.com</li>
-            <li>Celular: +56 44011200</li>
+            <li>Celular: +56 944011200</li>
             <li>
               <a
                 target="_blank"
