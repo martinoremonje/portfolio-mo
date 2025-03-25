@@ -18,7 +18,7 @@ const Footer = () => {
           <SiTypescript style={{ color: 'blue', fontSize: '2rem' }} />
           <SiPostgresql style={{ color: 'blue', fontSize: '2rem' }} />
         </div>
-        <ul className="flex space-x-6 hidden md:flex">
+        <ul className="flex space-x-6 md:flex">
           <li>
             <a href="#home" className="hover:text-blue-300 transition duration-200">
               Home
