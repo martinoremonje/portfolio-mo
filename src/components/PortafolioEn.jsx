@@ -37,10 +37,13 @@ const PortfolioEn = () => {
         className="mt-1 mx-2 min-h-screen bg-gray-100 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8"
         data-aos="fade-right"
       >
+        <div className='mensaje-comic'>
+
         <p className="text-lg md:text-xl max-w-lg mb-4 md:mb-0">
           Hello! My name is Martin Orellana and I am a fullstack web developer.
           I specialize in Javascript and use Node, Express, React, MongoDb, SQL and Typescript to create web pages with both Frontend and Backend.
         </p>
+        </div>
         <img
           src={superheroImg}
           alt="Superhero IMG"
