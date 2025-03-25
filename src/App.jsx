@@ -4,7 +4,9 @@ import Footer from './components/Footer'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
-import Portfolio from './components/Portafolio';
+import LanguageDependentComponent from './components/LanguagePortfolio';
+import {LanguageProvider} from './context/LanguageContext'
+
 
 
 const App = () => {
@@ -16,13 +18,19 @@ const App = () => {
 
   return (
     <div className='bg-gray-300'>
-
+      
+      
+      <LanguageProvider>
       <Navbar/>
 
-      <Portfolio />
+<LanguageDependentComponent />
 
 
-      <Footer />
+<Footer />
+
+      </LanguageProvider>
+      
+      
     </div>
   )
 }

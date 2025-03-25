@@ -1,6 +1,7 @@
 import React from "react";
 import programadorImg from '../assets/programador.png';
 import image from '../assets/pexels-njeromin-19872371.jpg';
+import ButtonLanguage from "./ButtonLanguage";
 
 const Navbar = () => {
   return (
@@ -14,6 +15,7 @@ const Navbar = () => {
         <div className="flex text-lg font-bold mb-2 md:mb-0">
           <img className="rounded-full h-12 w-12" src={programadorImg} alt="icon" />
           <span className="ml-1">Welcome!</span>
+          <ButtonLanguage   />
         </div>
         <ul className="flex flex-col md:flex-row space-x-0 md:space-x-6 items-center">
           <li className="mb-2 md:mb-0">
