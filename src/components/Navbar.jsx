@@ -18,7 +18,7 @@ const { language } = useContext(LanguageContext);
     }}>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         <div className="flex text-lg font-bold mb-2 md:mb-0">
-          <img className="rounded-full h-12 w-12" src={programadorImg} alt="icon" />
+          <img title="Hi there ;)" className="rounded-full h-12 w-12" src={programadorImg} alt="icon" />
           <span className="ml-1">{language === 'en' ? 'Welcome' : '¡Saludos!'}</span>
           <ButtonLanguage   />
         </div>
@@ -36,7 +36,7 @@ const { language } = useContext(LanguageContext);
               href="#certificates"
               className="hover:text-blue-300 transition duration-200"
             >
-              Certificados
+              Certificates
             </a>
           </li>
           <li className="mb-2 md:mb-0">
