@@ -2,8 +2,13 @@ import React from "react";
 import programadorImg from '../assets/programador.png';
 import image from '../assets/pexels-njeromin-19872371.jpg';
 import ButtonLanguage from "./ButtonLanguage";
+import { useContext } from 'react';
+import { LanguageContext } from '../context/LanguageContext';
+
 
 const Navbar = () => {
+const { language } = useContext(LanguageContext);
+
   return (
     <nav id="home" className="bg-gray-600 text-white py-4 shadow-md" style={{
       backgroundImage: `url(${image})`,
@@ -14,10 +19,10 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         <div className="flex text-lg font-bold mb-2 md:mb-0">
           <img className="rounded-full h-12 w-12" src={programadorImg} alt="icon" />
-          <span className="ml-1">Welcome!</span>
+          <span className="ml-1">{language === 'en' ? 'Welcome' : '¡Saludos!'}</span>
           <ButtonLanguage   />
         </div>
-        <ul className="flex flex-col md:flex-row space-x-0 md:space-x-6 items-center">
+        <ul className="flex flex-row space-x-3 md:space-x-6 items-center">
           <li className="mb-2 md:mb-0">
             <a
               href="#home"
