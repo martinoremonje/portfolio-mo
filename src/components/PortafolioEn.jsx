@@ -33,7 +33,7 @@ const PortfolioEn = () => {
         >
           Fullstack Developer | Web Designer
         </h1> */}
-        <motion.div className="box bg-amber-300 w-[55vw] h-[7vh] text-center text-4xl"  initial={{ boxShadow: "0px 0px #000" }}
+        <motion.div className="bg-amber-300 text-center text-2xl md:text-4xl p-4 rounded-lg shadow-md w-full md:w-3/4 lg:w-2/3 mx-auto"  initial={{ boxShadow: "0px 0px #000" }}
 
 animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack Developer | Web Designer</motion.div>
       </section>
@@ -147,7 +147,7 @@ animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack
         </div>
 
         
-        <motion.div className="font-bold box text-white bg-amber-300 w-[12vw] h-[6vh] text-center"  initial={{ boxShadow: "0px 0px #000" }}
+        <motion.div className="bg-amber-300 text-center text-xl md:text-3xl mt-1.5 p-3 rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mx-auto"  initial={{ boxShadow: "0px 0px #000" }}
 
 animate={{ boxShadow: "10px 10px #000" }} whileHover={{ scale: 1.2 }}>Don't click this</motion.div>
       </section>

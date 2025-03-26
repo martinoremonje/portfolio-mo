@@ -25,7 +25,7 @@ const Portfolio = () => {
           className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full mb-4 md:mb-0"
         />
         <motion.div
-          className="box bg-amber-300 w-[55vw] h-[7vh] text-center text-4xl"
+          className="bg-amber-300 text-center text-2xl md:text-4xl p-4 rounded-lg shadow-md w-full md:w-3/4 lg:w-2/3 mx-auto"
           initial={{ boxShadow: '0px 0px #000' }}
           animate={{ boxShadow: '10px 10px #000' }}
           transition={{ duration: 2 }}
@@ -142,7 +142,7 @@ const Portfolio = () => {
           </ul>
         </div>
         <motion.div
-          className="font-bold box text-white bg-amber-300 w-[12vw] h-[6vh] text-center"
+          className="bg-amber-300 text-center text-xl mt-1.5 md:text-3xl p-3 rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mx-auto"
           initial={{ boxShadow: '0px 0px #000' }}
           animate={{ boxShadow: '10px 10px #000' }}
           whileHover={{ scale: 1.2 }}
