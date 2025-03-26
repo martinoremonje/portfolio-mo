@@ -3,6 +3,7 @@ import superheroImg from '../assets/Screenshot_1.png';
 import river from '../assets/river.jpg';
 import insignia from '../assets/insignia.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { motion } from 'framer-motion'; // Corregido: Importación de framer-motion
 
 const Portfolio = () => {
   return (
@@ -10,7 +11,6 @@ const Portfolio = () => {
       <section
         id="homes"
         className="min-h-screen bg-gray-300 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8 lg:px-35"
-        data-aos="fade-up"
         style={{
           backgroundImage: `url(${river})`,
           backgroundSize: 'cover',
@@ -19,47 +19,55 @@ const Portfolio = () => {
         }}
       >
         <img
+          data-aos="fade-up"
           src={programadorImg}
           alt="Martin IMG"
           className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full mb-4 md:mb-0"
         />
-        <h1
-          data-aos-delay="500"
-          className="text-white text-2xl md:text-4xl font-bold underline text-center md:text-left"
+        <motion.div
+          className="box bg-amber-300 w-[55vw] h-[7vh] text-center text-4xl"
+          initial={{ boxShadow: '0px 0px #000' }}
+          animate={{ boxShadow: '10px 10px #000' }}
+          transition={{ duration: 2 }}
         >
-          Desarrollador Fullstack | Web Designer
-        </h1>
+          Desarrollador Fullstack | Diseñador Web
+        </motion.div>
       </section>
 
-      {/* Sección About */}
+      {/* Sección Acerca de */}
       <section
         id="about"
         className="mt-1 mx-2 min-h-screen bg-gray-100 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8"
-        data-aos="fade-right"
       >
-        <div className='mensaje-comic'>
-
-        <p className="text-lg md:text-xl max-w-lg mb-4 md:mb-0">
-          ¡Hola! Me llamo Martin Orellana y soy un desarrollador web fullstack.
-          Me especializo en el lenguaje de Javascript y utilizo Node, Express,
-          React, MongoDb, SQL y Typescript para crear páginas web tanto con Frontend
-          como con Backend.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="mensaje-comic"
+        >
+          <p className="text-lg md:text-xl max-w-lg mb-4 md:mb-0">
+            ¡Hola! Mi nombre es Martín Orellana y soy un desarrollador web
+            fullstack. Me especializo en Javascript y uso Node, Express, React,
+            MongoDb, SQL y Typescript para crear páginas web con Frontend y
+            Backend.
+          </p>
+        </motion.div>
+        <div data-aos="fade-right">
+          <img
+            src={superheroImg}
+            alt="Superhero IMG"
+            className="rounded-2xl w-full md:w-150 h-auto"
+          />
         </div>
-        <img
-          src={superheroImg}
-          alt="Superhero IMG"
-          className="rounded-2xl w-full md:w-150 h-auto"
-        />
       </section>
 
-      {/* Sección Certificates */}
+      {/* Sección Certificados */}
       <section
         id="certificates"
         className="mx-2 min-h-screen bg-gray-50 flex flex-col md:flex-row items-center justify-center md:justify-around px-4 md:px-8"
-        data-aos="fade-left"
       >
         <img
+          data-aos="fade-left"
           src={insignia}
           alt="Insignia IMG"
           className="rounded-2xl w-full md:w-130 h-auto mb-4 md:mb-0"
@@ -74,12 +82,12 @@ const Portfolio = () => {
             </li>
             <li>
               <a href="https://www.udemy.com/certificate/UC-d4877a13-f82b-447e-93ff-efed00299161/">
-                Curso React y Next.js: Aprende Frontend y Backend FullStack
+                Curso de React y Next.js: Aprende Frontend y Backend FullStack
               </a>
             </li>
             <li>
               <a href="https://desafiosdev.s3.amazonaws.com/uploads/certification/image/565/aprobacion-final-td8-g68-m10-desarrollo-de-aplicaciones-full-stack-javascript-trainee-v2-0-desarrollo-de-empleabilidad-en-la-industria-digital-ele030792068087-375(2).png">
-                Desarrollo de aplicaciones Full Stack Javascript Trainee
+                Desarrollo de Aplicaciones Full Stack Javascript Trainee
               </a>
             </li>
             <li>
@@ -89,17 +97,17 @@ const Portfolio = () => {
             </li>
             <li>
               <a href="https://www.udemy.com/certificate/UC-d289abb7-989d-4720-8ad4-9f383f3cde3e/">
-                Git, GitHub, GitLab y GitHub Copilot: Uso de repositorios
+                Git, GitHub, GitLab y GitHub Copilot: Uso de Repositorios
               </a>
             </li>
             <li>
               <a href="https://www.udemy.com/certificate/UC-a940e831-9611-4483-a2a0-40c4ba5e326d/">
-                Universidad Desarrollo Web - FrontEnd Web Developer!
+                Universidad de Desarrollo Web - ¡Desarrollador Web FrontEnd!
               </a>
             </li>
             <li>
               <a href="https://cert.efset.org/oi5sET">
-                EFSET English Certificate 82/100 (C2 Proficient)
+                Certificado de Inglés EFSET 82/100 (C2 Proficiente)
               </a>
             </li>
           </ul>
@@ -110,13 +118,12 @@ const Portfolio = () => {
       <section
         id="contact"
         className="min-h-screen bg-gray-20 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8"
-        data-aos="fade-right"
       >
-        <div>
+        <div data-aos="fade-right">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contacto</h2>
           <ul className="list-none ml-5 space-y-2">
             <li>Email: m.monjeorellana@gmail.com</li>
-            <li>Celular: +56 944011200</li>
+            <li>Teléfono: +56 944011200</li>
             <li>
               <a
                 target="_blank"
@@ -134,32 +141,14 @@ const Portfolio = () => {
             </li>
           </ul>
         </div>
-        <div style={{
-          borderRadius: '30px',
-          overflow: 'hidden',
-          width: '80vw',
-          maxWidth: '30vw',
-          height: '30vh',
-          marginTop:'1rem'
-        }}>
-          <div
-            className="tenor-gif-embed rounded-lg"
-            data-postid="14012925"
-            data-share-method="host"
-            data-aspect-ratio="1"
-            data-width="100%"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          >
-            <a href="https://tenor.com/view/aa-gif-25149805">
-              GIF de Email Marketing
-            </a>
-          </div>
-          <script
-            type="text/javascript"
-            async
-            src="https://tenor.com/embed.js"
-          />
-        </div>
+        <motion.div
+          className="font-bold box text-white bg-amber-300 w-[12vw] h-[6vh] text-center"
+          initial={{ boxShadow: '0px 0px #000' }}
+          animate={{ boxShadow: '10px 10px #000' }}
+          whileHover={{ scale: 1.2 }}
+        >
+          No hagas clic aquí
+        </motion.div>
       </section>
     </div>
   );

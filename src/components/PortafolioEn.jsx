@@ -3,6 +3,8 @@ import superheroImg from '../assets/Screenshot_1.png';
 import river from '../assets/river.jpg';
 import insignia from '../assets/insignia.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { motion } from "motion/react"
+
 
 const PortfolioEn = () => {
   return (
@@ -10,7 +12,7 @@ const PortfolioEn = () => {
       <section
         id="homes"
         className="min-h-screen bg-gray-300 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8 lg:px-35"
-        data-aos="fade-up"
+        
         style={{
           backgroundImage: `url(${river})`,
           backgroundSize: 'cover',
@@ -18,46 +20,57 @@ const PortfolioEn = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
+        
         <img
+        data-aos="fade-up"
           src={programadorImg}
           alt="Martin IMG"
           className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full mb-4 md:mb-0"
         />
-        <h1
+        {/* <h1
           data-aos-delay="500"
           className="text-white text-2xl md:text-4xl font-bold underline text-center md:text-left"
         >
           Fullstack Developer | Web Designer
-        </h1>
+        </h1> */}
+        <motion.div className="box bg-amber-300 w-[55vw] h-[7vh] text-center text-4xl"  initial={{ boxShadow: "0px 0px #000" }}
+
+animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack Developer | Web Designer</motion.div>
       </section>
 
       {/* Sección About */}
       <section
         id="about"
         className="mt-1 mx-2 min-h-screen bg-gray-100 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8"
-        data-aos="fade-right"
+        
       >
-        <div className='mensaje-comic'>
+       
+        
+        <motion.div initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1, delay: 0.5 }} className='mensaje-comic'><p className="text-lg md:text-xl max-w-lg mb-4 md:mb-0">
+      Hello! My name is Martin Orellana and I am a fullstack web developer.
+      I specialize in Javascript and use Node, Express, React, MongoDb, SQL and Typescript to create web pages with both Frontend and Backend.
+    </p></motion.div>
+        
+       <div  data-aos="fade-right">
 
-        <p className="text-lg md:text-xl max-w-lg mb-4 md:mb-0">
-          Hello! My name is Martin Orellana and I am a fullstack web developer.
-          I specialize in Javascript and use Node, Express, React, MongoDb, SQL and Typescript to create web pages with both Frontend and Backend.
-        </p>
-        </div>
         <img
           src={superheroImg}
           alt="Superhero IMG"
           className="rounded-2xl w-full md:w-150 h-auto"
         />
+       </div>
       </section>
 
       {/* Sección Certificates */}
       <section
         id="certificates"
         className="mx-2 min-h-screen bg-gray-50 flex flex-col md:flex-row items-center justify-center md:justify-around px-4 md:px-8"
-        data-aos="fade-left"
+        
       >
         <img
+        data-aos="fade-left"
           src={insignia}
           alt="Insignia IMG"
           className="rounded-2xl w-full md:w-130 h-auto mb-4 md:mb-0"
@@ -108,9 +121,9 @@ const PortfolioEn = () => {
       <section
         id="contact"
         className="min-h-screen bg-gray-20 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8"
-        data-aos="fade-right"
+        
       >
-        <div>
+        <div data-aos="fade-right">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contact</h2>
           <ul className="list-none ml-5 space-y-2">
             <li>Email: m.monjeorellana@gmail.com</li>
@@ -132,32 +145,11 @@ const PortfolioEn = () => {
             </li>
           </ul>
         </div>
-        <div style={{
-          borderRadius: '30px',
-          overflow: 'hidden',
-          width: '80vw',
-          maxWidth: '30vw',
-          height: '30vh',
-          marginTop: '1rem'
-        }}>
-          <div
-            className="tenor-gif-embed rounded-lg"
-            data-postid="14012925"
-            data-share-method="host"
-            data-aspect-ratio="1"
-            data-width="100%"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          >
-            <a href="https://tenor.com/view/aa-gif-25149805">
-              Email Marketing GIF
-            </a>
-          </div>
-          <script
-            type="text/javascript"
-            async
-            src="https://tenor.com/embed.js"
-          />
-        </div>
+
+        
+        <motion.div className="font-bold box text-white bg-amber-300 w-[12vw] h-[6vh] text-center"  initial={{ boxShadow: "0px 0px #000" }}
+
+animate={{ boxShadow: "10px 10px #000" }} whileHover={{ scale: 1.2 }}>Don't click this</motion.div>
       </section>
     </div>
   );
