@@ -52,7 +52,7 @@ const Portfolio = () => {
             Backend.
           </p>
         </motion.div>
-        <a href="https://martinoremonje.github.io/Encuentra-tu-SuperHero-MO/" target="_blank" rel="noopener noreferrer">
+        <a data-aos="fade-right" href="https://martinoremonje.github.io/Encuentra-tu-SuperHero-MO/" target="_blank" rel="noopener noreferrer">
          <div className="transition-transform hover:scale-102">
            <img
              src={superheroImg}

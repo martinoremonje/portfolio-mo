@@ -53,7 +53,7 @@ animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack
       I specialize in Javascript and use Node, Express, React, MongoDb, SQL and Typescript to create web pages with both Frontend and Backend.
     </p></motion.div>
         
-    <a href="https://martinoremonje.github.io/Encuentra-tu-SuperHero-MO/" target="_blank" rel="noopener noreferrer">
+    <a data-aos="fade-right" href="https://martinoremonje.github.io/Encuentra-tu-SuperHero-MO/" target="_blank" rel="noopener noreferrer">
   <div className="transition-transform hover:scale-102">
     <img
       src={superheroImg}
