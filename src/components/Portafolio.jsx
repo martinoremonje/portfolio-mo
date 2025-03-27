@@ -52,13 +52,15 @@ const Portfolio = () => {
             Backend.
           </p>
         </motion.div>
-        <div data-aos="fade-right">
-          <img
-            src={superheroImg}
-            alt="Superhero IMG"
-            className="rounded-2xl w-full md:w-150 h-auto"
-          />
-        </div>
+        <a href="https://martinoremonje.github.io/Encuentra-tu-SuperHero-MO/" target="_blank" rel="noopener noreferrer">
+         <div className="transition-transform hover:scale-102">
+           <img
+             src={superheroImg}
+             alt="Superhero IMG"
+             className="rounded-2xl w-full md:w-150 h-auto"
+           />
+         </div>
+       </a>
       </section>
 
       {/* Sección Certificados */}
@@ -119,28 +121,39 @@ const Portfolio = () => {
         id="contact"
         className="min-h-screen bg-gray-20 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8"
       >
-        <div data-aos="fade-right">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contacto</h2>
-          <ul className="list-none ml-5 space-y-2">
-            <li>Email: m.monjeorellana@gmail.com</li>
-            <li>Teléfono: +56 944011200</li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/martin-orellana-monje/"
-                style={{ whiteSpace: 'nowrap' }}
-              >
-                <FaLinkedin style={{ color: '#0077B5', fontSize: '2rem' }} />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/martinoremonje?tab=repositories">
-                <FaGithub style={{ color: 'black', fontSize: '2rem' }} />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <div data-aos="fade-right" className="bg-white rounded-lg p-4 relative contact-message lg:mr-3 border border-black">
+  <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contacto</h2>
+  <ul className="list-none ml-5 space-y-2">
+    <li>Email: m.monjeorellana@gmail.com</li>
+    <li>Phone: +56 944011200</li>
+    <li>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/martin-orellana-monje/"
+        style={{ whiteSpace: 'nowrap' }}
+      >
+        <FaLinkedin style={{ color: '#0077B5', fontSize: '2rem' }} />
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/martinoremonje?tab=repositories">
+        <FaGithub style={{ color: 'black', fontSize: '2rem' }} />
+      </a>
+    </li>
+  </ul>
+  <style jsx>{`
+    .contact-message::before {
+      content: '';
+      position: absolute;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent transparent black; /* Modificado */
+      left: -20px;
+      top: 10px;
+    }
+  `}</style>
+</div>
         <motion.div
           className="bg-amber-300 text-center text-xl mt-1.5 md:text-3xl p-3 rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mx-auto"
           initial={{ boxShadow: '0px 0px #000' }}
