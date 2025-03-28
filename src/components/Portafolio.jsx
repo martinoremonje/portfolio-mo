@@ -4,6 +4,8 @@ import river from '../assets/river.jpg';
 import insignia from '../assets/insignia.png';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope  } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Corregido: Importación de framer-motion
+import CardsSection from "./CardsSection"
+
 
 const Portfolio = () => {
   return (
@@ -115,7 +117,7 @@ const Portfolio = () => {
           </ul>
         </div>
       </section>
-
+      <CardsSection/>
       {/* Sección Contacto */}
       <section
         id="contact"

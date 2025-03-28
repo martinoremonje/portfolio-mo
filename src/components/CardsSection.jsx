@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import urlapp from '../assets/url-short.png';
 import todoapp from '../assets/todoApp.png';
 import shapp from '../assets/superhero.png';
 import w3 from '../assets/w3.jpg';
+import { LanguageContext } from '../context/LanguageContext';
 
 const CardsSection = () => {
+
+    const  {language} = useContext(LanguageContext)
+
     return (
         <section
             id="proyects"
@@ -40,7 +44,7 @@ const CardsSection = () => {
                     <div className="p-4">
                         <h3 className="text-xl font-semibold mb-2">URL shorter</h3>
                         <p className="text-gray-600">
-                            A URL shortening and management app, ideal for social media and personal URL tracking.
+                           {language === 'es' ? 'Acorta tus urls para redes sociales o uso personal, sirve como base de datos con ingreso de usuarios' : 'A URL shortening and management app, ideal for social media and personal URL tracking.'} 
                         </p>
                     </div>
                 </motion.div>
@@ -66,7 +70,7 @@ const CardsSection = () => {
                     <div className="p-4">
                         <h3 className="text-xl font-semibold mb-2">Simple Todo App</h3>
                         <p className="text-gray-600">
-                            A daily task management app with robust features and a sleek dark mode.
+                        {language === 'es' ? 'Una app para las tareas diarias, simple y con modo oscuro por defecto' : ' A daily task management app with robust features and a sleek dark mode.'} 
                         </p>
                     </div>
                 </motion.div>
@@ -92,7 +96,7 @@ const CardsSection = () => {
                     <div className="p-4">
                         <h3 className="text-xl font-semibold mb-2">Super Hero App</h3>
                         <p className="text-gray-600">
-                            A comprehensive database search tool for superheroes and villains, powered by an external API.
+                        {language === 'es' ? 'Una simple base de datos de villanos y heroes, llamada desde una API' : 'A comprehensive database search tool for superheroes and villains, powered by an external API.'}  
                         </p>
                     </div>
                 </motion.div>
