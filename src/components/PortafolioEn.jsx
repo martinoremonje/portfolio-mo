@@ -4,6 +4,7 @@ import river from '../assets/river.jpg';
 import insignia from '../assets/insignia.png';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope  } from 'react-icons/fa';
 import { motion } from "motion/react"
+import CardsSection from "./CardsSection"
 
 
 
@@ -118,7 +119,7 @@ animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack
           </ul>
         </div>
       </section>
-
+      <CardsSection/>
       {/* Sección Contacto */}
       <section
   id="contact"
@@ -167,6 +168,8 @@ animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack
     Don't click this
   </motion.div>
 </section>
+
+
     </div>
   );
 };
