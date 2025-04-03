@@ -55,7 +55,7 @@ animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack
       I specialize in Javascript and use Node, Express, React, MongoDb, SQL and Typescript to create web pages with both Frontend and Backend.
     </p></motion.div>
         
-    <a data-aos="fade-right" href="https://martinoremonje.github.io/Encuentra-tu-SuperHero-MO/" target="_blank" rel="noopener noreferrer">
+    <a data-aos="fade-right" href="https://desafiosdev.s3.amazonaws.com/uploads/certification/image/565/aprobacion-final-td8-g68-m10-desarrollo-de-aplicaciones-full-stack-javascript-trainee-v2-0-desarrollo-de-empleabilidad-en-la-industria-digital-ele030792068087-375(2).png" target="_blank" rel="noopener noreferrer">
   <div className="transition-transform hover:scale-102">
     <img
       src={superheroImg}
