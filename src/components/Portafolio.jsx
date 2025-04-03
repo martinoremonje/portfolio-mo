@@ -1,5 +1,5 @@
 import programadorImg from '../assets/programador.png';
-import superheroImg from '../assets/Screenshot_1.png';
+import superheroImg from '../assets/certificadoBootcamp.png';
 import river from '../assets/river.jpg';
 import insignia from '../assets/insignia.png';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope  } from 'react-icons/fa';

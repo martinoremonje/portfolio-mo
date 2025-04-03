@@ -1,5 +1,5 @@
 import programadorImg from '../assets/programador.png';
-import superheroImg from '../assets/Screenshot_1.png';
+import superheroImg from '../assets/certificadoBootcamp.png';
 import river from '../assets/river.jpg';
 import insignia from '../assets/insignia.png';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope  } from 'react-icons/fa';
@@ -125,7 +125,7 @@ animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack
   id="contact"
   className="min-h-screen bg-gray-20 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8"
 >
-<div data-aos="fade-right" className="bg-white rounded-lg p-4 relative contact-message lg:mr-3 border border-black">
+<div data-aos="fade-right" className="bg-white rounded-lg p-4 relative contact-message  lg:ml-[20vw] border-2 border-black">
   <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contact</h2>
   <ul className="list-none ml-5 space-y-2">
     <li><FaEnvelope style={{ color: '#0078D4', fontSize: '2rem' }} /> m.monjeorellana@gmail.com</li>
@@ -146,26 +146,16 @@ animate={{ boxShadow: "10px 10px #000" }} transition={{ duration: 2 }}>Fullstack
       </a>
     </li>
   </ul>
-  <style jsx>{`
-    .contact-message::before {
-      content: '';
-      position: absolute;
-      border-width: 10px;
-      border-style: solid;
-      border-color: transparent transparent transparent black; /* Modificado */
-      left: -20px;
-      top: 10px;
-    }
-  `}</style>
+  
 </div>
 
   <motion.div
-    className="bg-amber-300 text-center text-xl md:text-3xl mt-1.5 p-3 rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mx-auto"
+    className="bg-amber-300 text-center text-xl md:text-3xl mt-7 p-3 rounded-lg shadow-md w-full  md:w-1/6 lg:w-1/8 mx-auto"
     initial={{ boxShadow: '0px 0px #000' }}
     animate={{ boxShadow: '10px 10px #000' }}
     whileHover={{ scale: 1.2 }}
   >
-    Don't click this
+    :)
   </motion.div>
 </section>
 
